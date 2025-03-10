@@ -113,4 +113,8 @@ class AuthController extends Controller
             'expires_in' => auth()->factory()->getTTL()
         ], Response::HTTP_OK);
     }
+
+    public function text(){
+        return response()->json(['message' => 'Hello, World!']);
+    }
 }
