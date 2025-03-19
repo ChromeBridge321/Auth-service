@@ -114,7 +114,4 @@ class AuthController extends Controller
         ], Response::HTTP_OK);
     }
 
-    public function return(){
-        return Response::HTTP_OK;
-    }
 }
