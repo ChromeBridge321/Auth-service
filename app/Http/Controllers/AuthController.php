@@ -114,7 +114,7 @@ class AuthController extends Controller
         ], Response::HTTP_OK);
     }
 
-    public function text(){
-        return response()->json(['message' => 'Hello, World!']);
+    public function return(){
+        return Response::HTTP_OK;
     }
 }
