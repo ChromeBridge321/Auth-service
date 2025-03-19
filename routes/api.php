@@ -23,6 +23,6 @@ Route::prefix(('v1'))->middleware('api')->group(function(){
         Route::post('logout',[AuthController::class,'logout'])->name('logout');
         Route::post('refresh',[AuthController::class,'refresh']);
         Route::get('me',[AuthController::class,'me']);
-        Route::get('/purgar', [OrderController::class,'purgar']);
+        Route::get('purgar', [OrderController::class,'purgar']);
     });   
 });
