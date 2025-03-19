@@ -113,5 +113,7 @@ class AuthController extends Controller
             'expires_in' => auth()->factory()->getTTL()
         ], Response::HTTP_OK);
     }
-
+    public function purgar(){
+        return response()->json(['Purgado' => 'Ordenes'], Response::HTTP_OK);;
+    }
 }
